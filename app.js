@@ -11,3 +11,11 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+function toggleReadMore() {
+  var readMoreLink = document.querySelector('.read-more-link');
+  var readMoreContent = document.querySelector('.read-more-content');
+  
+  readMoreLink.classList.toggle('active');
+  readMoreContent.classList.toggle('active');
+}
