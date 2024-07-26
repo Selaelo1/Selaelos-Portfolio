@@ -35,6 +35,17 @@
   --color-grey-6: #12181b;
 }
 
+.light-mode .main-button {
+  background-color: #FFFFFF;
+  color: #454E56;
+  border-color:#F56692 ;
+}
+
+.light-mode .main-button:hover {
+  background-color: #F56692;
+  color: #454E56;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -733,6 +744,32 @@ section {
   padding: 1rem;
 }
 
+.main-button {
+  padding: 10px 32px;
+  /* Increase button size */
+  font: 17.6px Poppins, sans-serif;
+  font-weight: bold;
+  /* Make text bold */
+  background-color:#191D2B;
+  /* Green background color */
+  color: white;
+  /* White text color */
+  border-color: #27AE60;
+  /* Remove border */
+  border-radius: 25px;
+  /* Add rounded corners */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  transition: 0.3s ease-in-out;
+}
+
+.main-button:hover {
+  background-color: #27AE60;
+  /* White background color on hover */
+  color: white;
+  /* Green text color on hover */
+}
+
 .main-btn::before {
   content: "";
   position: absolute;
@@ -1077,5 +1114,40 @@ section {
     font-size: 4rem;
   }
 }
+
+.thank-you{
+  background-color: #27AE60;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.thank-you-h1{
+  color: #191D2B;
+  font-size: 300px;
+  text-align: center;
+}
+
+.thank-you-p{
+  color: #191D2B;
+  font-size: 100px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=styles.css.map */
