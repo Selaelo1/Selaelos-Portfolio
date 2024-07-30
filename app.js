@@ -12,10 +12,16 @@
     })
 })();
 
-function toggleReadMore() {
-  var readMoreLink = document.querySelector('.read-more-link');
-  var readMoreContent = document.querySelector('.read-more-content');
-  
-  readMoreLink.classList.toggle('active');
-  readMoreContent.classList.toggle('active');
-}
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.portfolio-item a').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        window.open(link.href, '_blank');
+      });
+    });
+  });
+
+
